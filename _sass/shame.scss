@@ -1,0 +1,12 @@
+/**
+ * For all naughty overrides that don't fit anywhere else, 
+ * eg: quick & dirty !importants and other shameful practise
+ *
+ * @author Kyreena Hay <kyreena@gmail.com>
+ * @url https://github.com/tbredin/OnionKnight
+ */
+
+.portfolio-empty {
+	display: none !important;
+    @include at-breakpoint($medium) { display: inline !important; }
+}

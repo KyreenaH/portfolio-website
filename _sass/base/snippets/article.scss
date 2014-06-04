@@ -1,0 +1,210 @@
+// XMod Article Plugin - Layout
+// sets up very, very basic layout and text overflow for article modules
+// it is recommended to extend .xmod-article-tile with a .xsb-grid-... class to complement this mixin
+@mixin article-tiles($heading-height: 2.4em, $image-height: 7em, $description-height: 6.2em, $footer-height: 2.2em, $article-bg: #fff, $article-footer-bg: #ccc, $description-overflow: ellipsis, $date: false, $tag-label: false) {
+    .xmod-articles {
+        @include transition(opacity 0.4s ease);
+    }
+
+    .xmod-article-tile,
+    .xmod-article-tile__image,
+    .xmod-article-tile__description {
+        margin-bottom: 1em;
+        display: block;
+    }
+
+    .xmod-article-tile {
+        @extend %border-box;
+        background-color: $article-bg;
+    }
+
+    .xmod-article-tile__image {
+        overflow: hidden;
+        width: 100%;
+        height: $image-height;
+        @include transition(height 0.2s ease);  //animate height at each breakpoint change
+
+        @include at-breakpoint($small-cols 510 / 16 * 1em) { max-height: 510/520 * $image-height; }
+        @include at-breakpoint($small-cols 500 / 16 * 1em) { max-height: 500/520 * $image-height; }
+        @include at-breakpoint($small-cols 490 / 16 * 1em) { max-height: 490/520 * $image-height; }
+        @include at-breakpoint($small-cols 480 / 16 * 1em) { max-height: 480/520 * $image-height; }
+        @include at-breakpoint($small-cols 470 / 16 * 1em) { max-height: 470/520 * $image-height; }
+        @include at-breakpoint($small-cols 460 / 16 * 1em) { max-height: 460/520 * $image-height; }
+        @include at-breakpoint($small-cols 450 / 16 * 1em) { max-height: 450/520 * $image-height; }
+        @include at-breakpoint($small-cols 440 / 16 * 1em) { max-height: 440/520 * $image-height; }
+        @include at-breakpoint($small-cols 430 / 16 * 1em) { max-height: 430/520 * $image-height; }
+        @include at-breakpoint($small-cols 420 / 16 * 1em) { max-height: 420/520 * $image-height; }
+        @include at-breakpoint($small-cols 410 / 16 * 1em) { max-height: 410/520 * $image-height; }
+        @include at-breakpoint($small-cols 400 / 16 * 1em) { max-height: 400/520 * $image-height; }
+        @include at-breakpoint($small-cols 390 / 16 * 1em) { max-height: 390/520 * $image-height; }
+        @include at-breakpoint($small-cols 380 / 16 * 1em) { max-height: 380/520 * $image-height; }
+        @include at-breakpoint($small-cols 370 / 16 * 1em) { max-height: 370/520 * $image-height; }
+        @include at-breakpoint($small-cols 360 / 16 * 1em) { max-height: 360/520 * $image-height; }
+        @include at-breakpoint($small-cols 350 / 16 * 1em) { max-height: 350/520 * $image-height; }
+        @include at-breakpoint($small-cols 340 / 16 * 1em) { max-height: 340/520 * $image-height; }
+        @include at-breakpoint($small-cols 330 / 16 * 1em) { max-height: 330/520 * $image-height; }
+        @include at-breakpoint($small-cols 320 / 16 * 1em) { max-height: 320/520 * $image-height; }
+
+        a {
+            display: block;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .xmod-article-tile__description {
+        @if $description-overflow == ellipsis {
+            @include multiline-text-overflow($description-height, $article-bg);
+        } @else if $description-overflow == fade {
+            @include set-fade-overflow($description-height, $article-bg);
+        }
+    }
+
+    .xmod-article-tile__heading {
+        font-size: px-to-ems($h3-size);
+        padding-bottom: 0;
+        margin-bottom: 0.5em;
+        line-height: 1.2;
+        @include multiline-text-overflow($heading-height, $article-bg);
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    .xmod-article-tile__footer {
+        display: block;
+        float: none;
+        @extend %clearfix;
+        height: $footer-height * 9/10;
+        background-color: $article-footer-bg;
+    }
+
+    .xmod-article-tile__tags {
+        line-height: 1.5;
+        font-size: px-to-ems($small-size + 1);
+        @include multiline-text-overflow($footer-height, $article-footer-bg);
+
+        &:after {
+            top: -15px; //not sure if this is 100% needed
+        }
+
+        a {
+            line-height: inherit;
+            font-size: 1em;
+        }
+    }
+
+    @if $date == false {
+        .xmod-article-tile__date {
+            display: none;
+        }
+    }
+
+    @if $tag-label == false {
+        .xmod-article-tile__tag-label {
+            display: none;
+        }
+    }
+}
+
+//article search results
+@mixin article-search($info-color, $padding, $frame-class: false, $button-class: false, $input-class: false) {
+    .xmod-article-search-form {
+        @include at-breakpoint($medium) {
+            float: right;
+            width: 50%;
+            padding-top: 0.2em;
+
+            label {
+                float: left;
+                padding-top: 0.3em;
+            }
+        }
+
+        @include at-breakpoint($large) {
+            width: 42%;
+        }
+
+        .form-button {
+            @include border-left-radius(0!important);
+
+            @if $button-class {
+                @extend #{$button-class};
+            }
+        }
+
+        .form-text {
+            @include border-right-radius(0!important);
+
+            @if $input-class {
+                @extend #{$input-class};
+            }
+        }
+
+        .form-text-button-table {
+            @include at-breakpoint($medium) {
+                width: 80%;
+                float: right;
+            }
+
+            @include at-breakpoint($large) {
+                width: 85%;
+            }
+        }
+    }
+
+    .xmod-article-search-result {
+        margin-bottom: 1em;
+        padding: $padding;
+        @extend %clearfix;
+
+        @if $frame-class {
+            @extend #{$frame-class};
+        }
+    }
+
+    .xmod-article-search-result__heading {
+        padding-bottom: 0;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .xmod-article-search-header {
+        padding-bottom: 0.5em;
+        padding-top: 0.1em;
+    }
+
+    .xmod-article-search-result__section,
+    .xmod-article-search-result__date {
+        color: $info-color;
+        font-family: $heading-font;
+        margin-bottom: 0.5em;
+    }
+
+    .xmod-article-search-result__section:before {
+        content: " |  ";
+        display: inline;
+        color: lighten($info-color, 40%);
+        margin: 0 0.5em;
+        font-weight: 100;
+        font-size: 1.2em;
+    }
+
+    .xmod-article-search-result__description {
+        @include at-breakpoint($large) {
+            @include span-columns(10, 12);
+        }
+    }
+}

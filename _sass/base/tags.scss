@@ -1,0 +1,171 @@
+/**
+ * Any Typography and bare tag styles
+ *
+ * @author Kyreena Hay <kyreena@gmail.com>
+ * @url https://github.com/tbredin/OnionKnight
+ */
+
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: $body-font;
+    -webkit-font-smoothing: antialiased;
+}
+
+// ensures initial or successive headings will not be spaced too heavily apart
+%heading-group {
+    padding-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    &:first-child {
+        @extend %heading-group;
+    }
+}
+
+// @todo add your font filenames
+h1, h2, h3, h4 {
+    @extend %heading-font;
+    text-align: center;
+}
+
+// h1 & h2 have their bare font information abstracted for use in other modules
+%h1-style {
+    @include adjust-font-size-to($h1-size);
+    font-weight: bold;
+    text-transform: $heading-case;
+}
+
+h1 {
+    color: $heading-color;
+    @extend %h1-style;
+    @include rhythm(0, 1, 0.5, 1, $h1-size);
+
+    + h2, + h3, + h4, + h5, + h6 {
+        @extend %heading-group;
+    }
+}
+
+// h1 & h2 have their bare font information abstracted for use in other modules
+%h2-style {
+    @include adjust-font-size-to($h2-size);
+    font-weight: normal;
+    text-transform: $heading-case;
+}
+
+h2 {
+    color: $sub-heading-color;
+    @extend %h2-style;
+    @include rhythm(0, 1, 0.5, 0, $h2-size);
+
+    + h3, + h4, + h5, + h6 {
+        @extend %heading-group;
+    }
+}
+
+h3 {
+    @include adjust-font-size-to($h3-size);
+    color: $sub-heading-color;
+    @include rhythm(0, 1, 0.5, 0, $h3-size);
+
+    + h4, + h5, + h6 {
+        @extend %heading-group;
+    }
+}
+
+h4 {
+    @include adjust-font-size-to($h4-size);
+    color: $sub-heading-color;
+    @include rhythm(0, 1, 0.5, 0, $h4-size);
+
+    + h5, + h6 {
+        @extend %heading-group;
+    }
+}
+
+h5 {
+    @include adjust-font-size-to($h5-size);
+    @include rhythm(0, 1, 0.5, 0, $h5-size);
+    
+    + h6 {
+        @extend %heading-group;
+    }
+}
+
+h6 {
+    @include adjust-font-size-to($h6-size);
+    @include rhythm(0, 1, 0.5, 0, $h6-size);
+}
+
+dt {
+    @include adjust-font-size-to($small-size);
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #222;
+}
+
+dd, p, li, td, th {
+    @include adjust-font-size-to($p-size)
+}
+
+p {
+    line-height: 1.6em;
+    margin-bottom: 1.5em;
+}
+
+a, a:hover { text-decoration: none; }
+
+hr {
+    //draw top & bottom borders 
+    border-top-color: white(0.5);
+    border-bottom-color: black(0.5);
+    border-style: solid none;
+    height: 0;
+    
+    //retain vertical rhythm by enabling the following styles. Will break some libraries if not scoped properly!
+    //@include leading-border(1px, 0.5);
+    //@include trailing-border(1px, 0.5);
+}
+
+ul {
+    list-style: none;
+} 
+
+ol {
+    list-style: decimal outside;
+    padding-left: $base-font-size * 1.2;
+}
+
+th, caption {
+    font-size: $small-size;
+}
+
+label {
+    cursor: pointer;
+}
+
+section, article, aside {
+    display: block;
+}
+
+sup, sub {
+    font-size: 60%;
+}
+
+sup {
+    vertical-align: super;
+}
+
+sub {
+    vertical-align: sub;
+}
+
+code {
+    font-family: $code-font;
+}
+
+img {
+    max-width: 100%;
+}

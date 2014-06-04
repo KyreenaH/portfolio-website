@@ -1,0 +1,37 @@
+.legacy {
+
+	.header {
+		background-image: url("/imgs/header-shadow.png");
+		background-repeat: repeat-x;
+		background-color: transparent;
+		background-position: 0px 0px;
+		height: 95px;
+	}
+
+	.title li {
+		display: none;
+	}
+
+	.title-li-ie {
+		display: inline-block !important;
+	}
+
+	.about-right {
+		float: left;
+		margin-right: 0px;
+	}
+
+	.skills-ie-child {
+		width: 3em;
+		border-bottom: 2px solid #333333;
+		padding-bottom: 0.5em;
+		margin-bottom: 0.5em;
+	}
+
+	.end-li, .portfolio-empty {
+		margin-right: 0px !important;
+	}
+
+}
+
+

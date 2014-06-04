@@ -1,0 +1,80 @@
+/**
+ * Site Variables
+ *
+ * @author Kyreena Hay <kyreena@gmail.com>
+ * @url https://github.com/tbredin/OnionKnight
+ */
+
+// @todo customise your site colors
+// colors
+$site-purple: #ad326f;
+$site-blue: #5ec8d3;
+$site-yellow: #f4eb9f;
+$site-black: #333333;
+$site-grey: #666666;
+$heading-color: $site-black;
+$sub-heading-color: $site-grey;
+$link-color: $site-blue;
+
+//responsive grid breakpoints
+//column numbers
+//for constructing longhand susy layouts inside at-breakpoint mixins
+$total-columns: 6;
+$small-cols: 6;
+$medium-cols: 9;
+$large-cols: 12;
+
+//function for calculating exact em widths of susy layouts
+@function calc-breakpoint($cols) {
+    // gutters + columns + grid padding
+    @return ($cols - 1) * $gutter-width + $cols * $column-width + 2 * $grid-padding;
+}
+
+//exact widths (as calculated by susy)
+//for constructing longhand susy layouts inside at-breakpoint mixins
+$small-width: calc-breakpoint($small-cols);
+$medium-width: calc-breakpoint($medium-cols);
+$large-width: calc-breakpoint($large-cols);
+
+//susy standard responsive layouts
+//use as shorthand for your breakpoints
+$small:     $small-cols no-mediaqueries;
+$medium:    $medium-cols no-mediaqueries;
+$large:     $large-cols no-mediaqueries;
+
+// vertical rhythm
+$base-font-size: 16px;
+$base-line-height: 24px;
+$round-to-nearest-half-line: true;
+@include establish-baseline;
+
+// grid settings
+$col-num: 12;
+$column-width: 4.2em;   // default 4.2em is max col width for layouts to look nice on ipad
+$gutter-width: 1em;     // default 1em is max gutter width for layouts to look nice on ipad
+$grid-padding: $gutter-width;
+
+// sticky footer (entirely optional - for use with compass sticky footer mixin)
+$sticky-footer: 300px;
+
+// typographic scale
+$h1-size: 30px;
+$h2-size: 20px;
+$h3-size: 31px;
+$h4-size: 18px;
+$h5-size: 16px;
+$h6-size: 14px;
+$p-size: 18px;
+$small-size: 12px;
+
+// other typography
+$heading-case: capitalize;
+$heading-font: "brandon_grotesque", Helvetica, Arial, sans-serif;
+$body-font: "source_sans_pro", Helvetica, Arial, sans-serif;
+$code-font: "inconsolata", "Consolas", "droid-sans-mono", "Droid Sans Mono", "Monaco", "Lucida Console", monospace;
+
+// misc
+$border-radius: 0.4em;
+
+// neccessary for custom gradient mixins to work - sets start position of gradients globally
+$gradient-startpoint: top;
