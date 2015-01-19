@@ -43,10 +43,10 @@
 
 
 // cross-browser rem units.
-@mixin rem($property, $value) {
-    #{$property}: $value * $base-font-size;
-    #{$property}: #{$value}rem;
-}
+// @mixin rem($property, $value) {
+//     #{$property}: $value * $base-font-size;
+//     #{$property}: #{$value}rem;
+// }
 
 
 // embosses box

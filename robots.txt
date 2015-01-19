@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /www.kyreenahay.com
-
-User-Agent: Googlebot
-Disallow: /www.kyreenahay.com

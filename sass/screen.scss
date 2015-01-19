@@ -6,12 +6,13 @@
  * @url https://github.com/tbredin/OnionKnight
  */
 @import "compass",
-        "susy",
+        "susyone",
         "compass/reset",
         "compass/css3",
         "compass/css3/font-face",
         "compass/css3/transition",
-        "compass/css3/text-shadow";
+        "compass/css3/text-shadow",
+        "compass/css3/transform";
 
 @import "base/variables",
         "base/fonts",
