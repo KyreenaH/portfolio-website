@@ -52,6 +52,11 @@
 	}
 }
 
+h5 {
+	padding: 0;
+	margin: 0;
+}
+
 .mob img {
 	@extend %mobile-only;
 	float: left;
