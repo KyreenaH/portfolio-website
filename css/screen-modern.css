@@ -541,12 +541,6 @@ h5 {
   margin-top: -2px;
   width: 22px; }
 
-#portfolio {
-  height: 3.1em; }
-
-#about {
-  height: 1.4em; }
-
 .nav {
   float: right;
   font-family: "brandon_grotesque", Helvetica, Arial, sans-serif; }
@@ -581,7 +575,7 @@ a.email-b {
   text-align: center; }
   @media (min-width: 45.8em) {
     .intro {
-      padding: 8em 0 1em; } }
+      padding: 8em 0 3em; } }
   .intro h1 {
     letter-spacing: 0.02em;
     margin-bottom: 0.2em;
@@ -869,7 +863,7 @@ a.email-b {
   100% {
     opacity: 1; } }
 .portfolio {
-  padding: 2em 0 3em; }
+  padding: 2em 0 4em; }
   .portfolio ul {
     padding-top: 2.5em; }
 

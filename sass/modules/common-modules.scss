@@ -62,17 +62,6 @@ h5 {
 	width: 22px;
 }
 
-// the page id links styled so that the fixed position header doesn't hide the section's information:
-
-#portfolio {
-	height: 3.1em;
-}
-
-#about {
-	height: 1.4em;
-}
-
-// end of page id link styles
 
 .nav {
 	float: right;
@@ -125,7 +114,7 @@ a.email-b {
 	text-align: center;
 
 	@include at-breakpoint($medium) {
-			padding: 8em 0 1em;
+			padding: 8em 0 3em;
 		}
 
 	h1 {
@@ -321,7 +310,7 @@ a.email-b {
 
 
 .portfolio {
-	padding: 2em 0 3em;
+	padding: 2em 0 4em;
 
 	ul {
 		padding-top: 2.5em;
