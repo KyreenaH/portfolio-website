@@ -247,7 +247,10 @@ h4 {
 h5 {
   font-size: 1em;
   line-height: 1.5em;
- }
+  margin-top: 0em;
+  padding-top: 1.5em;
+  padding-bottom: 0.75em;
+  margin-bottom: 0em; }
 
 h6 {
   font-size: 0.875em;
@@ -513,14 +516,10 @@ img {
         clear: both; } }
 
 .header {
-  -moz-box-shadow: 1px 4px 0px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 1px 4px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 1px 4px 0px rgba(0, 0, 0, 0.2);
   z-index: 1000;
-  position: fixed;
+  position: absolute;
   top: 0px;
-  width: 100%;
-  background-color: #FFFFFF; }
+  width: 100%; }
   .header h2 {
     line-height: 0.5em;
     padding-bottom: 0; }
@@ -531,7 +530,11 @@ img {
   float: left;
   text-transform: lowercase; }
   .logo h2 a, .logo h2 a:hover, .full h2 a, .full h2 a:hover {
-    color: #5ec8d3; }
+    color: #fff; }
+
+h5 {
+  padding: 0;
+  margin: 0; }
 
 .mob img {
   float: left;
