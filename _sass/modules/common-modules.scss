@@ -26,10 +26,12 @@
 }
 
 .header {
+	@include box-shadow(1px 4px 0px rgba(0,0,0,.2));
 	z-index: 1000;
-	position: absolute;
+	position: fixed;
 	top:0px;
 	width: 100%;
+	background-color: #FFFFFF;
 
 	h2 {
 		line-height: 0.5em;
@@ -45,7 +47,7 @@
 	@extend %no-mobile;
 
 	a, a:hover {
-		color: #fff;
+		color: $site-blue;
 
 	}
 }
