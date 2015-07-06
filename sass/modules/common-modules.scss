@@ -25,10 +25,25 @@
 	// @include test-grids;
 }
 
+.home-header {
+	position: absolute;
+	top:0px;
+	width: 100%;
+
+	h2 {
+		line-height: 0.5em;
+		padding-bottom: 0;
+	}
+
+	a, a:hover {
+		color: #fff;
+	}
+}
+
 .header {
 	@include box-shadow(1px 4px 0px rgba(0,0,0,.2));
 	z-index: 1000;
-	position: fixed;
+	position: absolute;
 	top:0px;
 	width: 100%;
 	background-color: #FFFFFF;
@@ -36,6 +51,17 @@
 	h2 {
 		line-height: 0.5em;
 		padding-bottom: 0;
+	}
+
+	a, a:hover {
+		color: $site-grey;
+	}
+}
+
+.home-logo h2 {
+
+	a, a:hover {
+		color: #fff !important;
 	}
 }
 
@@ -64,6 +90,16 @@ h5 {
 	width: 22px;
 }
 
+.home-header .nav {
+	a {
+		color: #fff;
+
+		&:hover {
+			color: $site-purple;
+		}
+	}
+}
+
 
 .nav {
 	float: right;
@@ -86,7 +122,7 @@ h5 {
 	}
 
 	a {
-		color: #fff;
+		color: $site-grey;
 
 		&:hover {
 			color: $site-purple;
