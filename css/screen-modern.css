@@ -1,0 +1,1154 @@
+/**
+ * Master template for modern browsers
+ *
+ * @author Kyreena Hay <kyreena@gmail.com>
+ * @url https://github.com/tbredin/OnionKnight
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/**
+ * Template that imports all other files. Add your custom files
+ * Compiled down to css via screen-modern/legacy
+ *
+ * @author Kyreena Hay <kyreena@gmail.com>
+ * @url https://github.com/tbredin/OnionKnight
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/**
+ * Site Variables
+ *
+ * @author Kyreena Hay <kyreena@gmail.com>
+ * @url https://github.com/tbredin/OnionKnight
+ */
+html {
+  font-size: 100%;
+  line-height: 1.5em; }
+
+/**
+ * Fontface declarations and font extends
+ *
+ * @author Kyreena Hay <kyreena@gmail.com>
+ * @url https://github.com/tbredin/OnionKnight
+ */
+@font-face {
+  font-family: 'brandon_grotesque';
+  src: url("../fonts/brandon_blk-webfont.eot");
+  src: url("../fonts/brandon_blk-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon_blk-webfont.woff") format("woff"), url("../fonts/brandon_blk-webfont.ttf") format("truetype"), url("../fonts/brandon_blk-webfont.svg#brandon_grotesqueblack") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'brandon_grotesque';
+  src: url("../fonts/brandon_light_it-webfont.eot");
+  src: url("../fonts/brandon_light_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon_light_it-webfont.woff") format("woff"), url("../fonts/brandon_light_it-webfont.ttf") format("truetype"), url("../fonts/brandon_light_it-webfont.svg#brandon_grotesquelight_italic") format("svg");
+  font-weight: lighter;
+  font-style: italic; }
+@font-face {
+  font-family: 'brandon_grotesque';
+  src: url("../fonts/brandon_bld-webfont.eot");
+  src: url("../fonts/brandon_bld-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon_bld-webfont.woff") format("woff"), url("../fonts/brandon_bld-webfont.ttf") format("truetype"), url("../fonts/brandon_bld-webfont.svg#brandon_grotesquebold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'source_sans_pro';
+  src: url("../fonts/sourcesanspro-italic-webfont.eot");
+  src: url("../fonts/sourcesanspro-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-italic-webfont.woff") format("woff"), url("../fonts/sourcesanspro-italic-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-italic-webfont.svg#source_sans_proitalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'source_sans_pro';
+  src: url("../fonts/sourcesanspro-regular-webfont.eot");
+  src: url("../fonts/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-regular-webfont.woff") format("woff"), url("../fonts/sourcesanspro-regular-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/**
+ * Any non-site-specific tools and code snippets
+ *
+ * @author Kyreena Hay <kyreena@gmail.com>
+ * @url https://github.com/tbredin/OnionKnight
+ */
+h1, h2, h3, h4 {
+  font-family: "brandon_grotesque", Helvetica, Arial, sans-serif; }
+
+.logo h2, .full h2 {
+  display: none; }
+  @media (min-width: 53em) {
+    .logo h2, .full h2 {
+      display: inline; } }
+
+.mob img {
+  display: inline-block; }
+  @media (min-width: 53em) {
+    .mob img {
+      display: none; } }
+
+/**
+ * Custom Navigation
+ *
+ * @author Thomas Bredin-Grey <thomas@panmedia.co.nz>
+ * @author Hemi Ormsby <hemi@panmedia.co.nz>
+ * @url https://github.com/tbredin/OnionKnight
+ *
+ * @description: A set of mixins that automate navigation styles based on Mammoth navigation builder
+*/
+/**
+ * Any Typography and bare tag styles
+ *
+ * @author Kyreena Hay <kyreena@gmail.com>
+ * @url https://github.com/tbredin/OnionKnight
+ */
+body, html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "source_sans_pro", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child, h1 + h2, h1 + h3, h1 + h4, h1 + h5, h1 + h6, h2 + h3, h2 + h4, h2 + h5, h2 + h6, h3 + h4, h3 + h5, h3 + h6, h4 + h5, h4 + h6, h5 + h6 {
+  padding-top: 0; }
+
+h1, h2, h3, h4 {
+  text-align: center; }
+
+h1 {
+  font-size: 1.875em;
+  line-height: 1.2em;
+  font-weight: bold;
+  text-transform: capitalize; }
+
+h1 {
+  color: #333333;
+  margin-top: 0em;
+  padding-top: 0.8em;
+  padding-bottom: 0.4em;
+  margin-bottom: 0.8em; }
+
+h2 {
+  font-size: 1.25em;
+  line-height: 1.2em;
+  font-weight: normal;
+  text-transform: capitalize; }
+
+h2 {
+  color: #666666;
+  margin-top: 0em;
+  padding-top: 1.2em;
+  padding-bottom: 0.6em;
+  margin-bottom: 0em; }
+
+h3 {
+  font-size: 1.9375em;
+  line-height: 1.16129em;
+  color: #666666;
+  margin-top: 0em;
+  padding-top: 0.77419em;
+  padding-bottom: 0.3871em;
+  margin-bottom: 0em; }
+
+h4 {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  color: #666666;
+  margin-top: 0em;
+  padding-top: 1.33333em;
+  padding-bottom: 0.66667em;
+  margin-bottom: 0em; }
+
+h5 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 0em;
+  padding-top: 1.5em;
+  padding-bottom: 0.75em;
+  margin-bottom: 0em; }
+
+h6 {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  margin-top: 0em;
+  padding-top: 1.71429em;
+  padding-bottom: 0.85714em;
+  margin-bottom: 0em; }
+
+dt {
+  font-size: 0.75em;
+  line-height: 2em;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #222; }
+
+dd, p, li, td, th {
+  font-size: 1.125em;
+  line-height: 1.33333em; }
+
+p {
+  line-height: 1.6em;
+  margin-bottom: 1.5em; }
+
+a, a:hover {
+  text-decoration: none; }
+
+hr {
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+  border-style: solid none;
+  height: 0; }
+
+ul {
+  list-style: none; }
+
+ol {
+  list-style: decimal outside;
+  padding-left: 19.2px; }
+
+th, caption {
+  font-size: 12px; }
+
+label {
+  cursor: pointer; }
+
+section, article, aside {
+  display: block; }
+
+sup, sub {
+  font-size: 60%; }
+
+sup {
+  vertical-align: super; }
+
+sub {
+  vertical-align: sub; }
+
+code {
+  font-family: "inconsolata", "Consolas", "droid-sans-mono", "Droid Sans Mono", "Monaco", "Lucida Console", monospace; }
+
+img {
+  max-width: 100%; }
+
+/**
+ * Any Custom grid classes
+ *
+ * @author Kyreena Hay <kyreena@gmail.com>
+ * @url https://github.com/tbredin/OnionKnight
+ */
+.xsb-grid__6-6-8 {
+  width: 100%;
+  float: left;
+  margin-right: 2.85714%;
+  display: inline; }
+  @media (min-width: 53em) {
+    .xsb-grid__6-6-8 {
+      width: 66.03774%;
+      float: left;
+      margin-right: 1.88679%; } }
+  @media (min-width: 71em) {
+    .xsb-grid__6-6-8 {
+      width: 66.19718%;
+      float: left;
+      margin-right: 1.40845%; } }
+
+.xsb-grid__6-6-8_omega {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline; }
+  @media (min-width: 53em) {
+    .xsb-grid__6-6-8_omega {
+      width: 66.03774%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 71em) {
+    .xsb-grid__6-6-8_omega {
+      width: 66.19718%;
+      float: right;
+      margin-right: 0; } }
+
+.xsb-grid__6-3-4 {
+  width: 100%;
+  float: left;
+  margin-right: 2.85714%;
+  display: inline; }
+  @media (min-width: 53em) {
+    .xsb-grid__6-3-4 {
+      width: 32.07547%;
+      float: left;
+      margin-right: 1.88679%; } }
+  @media (min-width: 71em) {
+    .xsb-grid__6-3-4 {
+      width: 32.39437%;
+      float: left;
+      margin-right: 1.40845%; } }
+
+.xsb-grid__6-3-4_omega {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline; }
+  @media (min-width: 53em) {
+    .xsb-grid__6-3-4_omega {
+      width: 32.07547%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 71em) {
+    .xsb-grid__6-3-4_omega {
+      width: 32.39437%;
+      float: right;
+      margin-right: 0; } }
+
+.xsb-grid__6-4-6 {
+  width: 100%;
+  float: left;
+  margin-right: 2.85714%;
+  display: inline; }
+  @media (min-width: 53em) {
+    .xsb-grid__6-4-6 {
+      width: 43.39623%;
+      float: left;
+      margin-right: 1.88679%; } }
+  @media (min-width: 71em) {
+    .xsb-grid__6-4-6 {
+      width: 49.29577%;
+      float: left;
+      margin-right: 1.40845%; } }
+
+.xsb-grid__6-4-6_omega {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline; }
+  @media (min-width: 53em) {
+    .xsb-grid__6-4-6_omega {
+      width: 43.39623%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 71em) {
+    .xsb-grid__6-4-6_omega {
+      width: 49.29577%;
+      float: right;
+      margin-right: 0; } }
+
+.xsb-grid__6-8-10 {
+  width: 100%;
+  float: left;
+  margin-right: 2.85714%;
+  display: inline; }
+  @media (min-width: 53em) {
+    .xsb-grid__6-8-10 {
+      width: 88.67925%;
+      float: left;
+      margin-right: 1.88679%; } }
+  @media (min-width: 71em) {
+    .xsb-grid__6-8-10 {
+      width: 83.09859%;
+      float: left;
+      margin-right: 1.40845%; } }
+
+.xsb-grid__6-8-10_omega {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline; }
+  @media (min-width: 53em) {
+    .xsb-grid__6-8-10_omega {
+      width: 88.67925%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 71em) {
+    .xsb-grid__6-8-10_omega {
+      width: 83.09859%;
+      float: right;
+      margin-right: 0; } }
+
+/**
+ * Any other common layout patterns
+ *
+ * @author Kyreena Hay <kyreena@gmail.com>
+ * @url https://github.com/tbredin/OnionKnight
+ */
+/**
+ * Common extensible block/element modules
+ *
+ * @author Kyreena Hay <kyreena@gmail.com>
+ * @url https://github.com/tbredin/OnionKnight
+ */
+.logo h2, .full h2 {
+  display: none; }
+  @media (min-width: 53em) {
+    .logo h2, .full h2 {
+      display: inline; } }
+
+.mob img {
+  display: inline-block; }
+  @media (min-width: 53em) {
+    .mob img {
+      display: none; } }
+
+.container {
+  *zoom: 1;
+  max-width: 35em;
+  _width: 35em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.6em 1em; }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media (min-width: 53em) {
+    .container {
+      *zoom: 1;
+      max-width: 53em;
+      padding-left: 1em;
+      padding-right: 1em;
+      margin-left: auto;
+      margin-right: auto; }
+      .container:after {
+        content: "";
+        display: table;
+        clear: both; } }
+  @media (min-width: 71em) {
+    .container {
+      *zoom: 1;
+      max-width: 71em;
+      padding-left: 1em;
+      padding-right: 1em;
+      margin-left: auto;
+      margin-right: auto; }
+      .container:after {
+        content: "";
+        display: table;
+        clear: both; } }
+
+.home-header {
+  position: absolute;
+  width: 100%; }
+  .home-header h2 {
+    line-height: 0.5em;
+    padding-bottom: 0; }
+  .home-header a, .home-header a:hover {
+    color: #fff; }
+
+.header {
+  -moz-box-shadow: 1px 4px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 4px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background-color: #FFFFFF; }
+  .header h2 {
+    line-height: 0.5em;
+    padding-bottom: 0; }
+  .header a, .header a:hover {
+    color: #666666; }
+
+.home-logo h2 a, .home-logo h2 a:hover {
+  color: #fff !important; }
+
+.logo h2, .full h2 {
+  text-align: left;
+  font-size: 2em;
+  float: left;
+  text-transform: lowercase; }
+  .logo h2 a, .logo h2 a:hover, .full h2 a, .full h2 a:hover {
+    color: #5ec8d3; }
+
+h5 {
+  padding: 0;
+  margin: 0; }
+
+.mob img {
+  float: left;
+  margin-top: -2px;
+  width: 22px; }
+
+.home-header .nav a {
+  color: #fff; }
+  .home-header .nav a:hover {
+    color: #ad326f; }
+
+.nav {
+  float: right;
+  font-family: "brandon_grotesque", Helvetica, Arial, sans-serif; }
+  .nav li {
+    float: left;
+    display: inline-block;
+    padding-left: 1.5em;
+    font-size: 0.95em; }
+    @media (min-width: 53em) {
+      .nav li {
+        padding-left: 2em; } }
+    .nav li:first-child {
+      padding-left: 0; }
+  .nav a {
+    color: #666666; }
+    .nav a:hover {
+      color: #ad326f; }
+
+a.email {
+  color: #fff; }
+  a.email:hover {
+    color: #44C6D3; }
+
+a.email-b {
+  color: #00A5D3; }
+  a.email-b:hover {
+    color: #00C0D3; }
+
+.intro {
+  padding: 7em 0 0.5em;
+  background-color: #5ec8d3;
+  text-align: center; }
+  @media (min-width: 53em) {
+    .intro {
+      padding: 7.5em 0 3em;
+      margin: 0.8em; } }
+  .intro h1 {
+    letter-spacing: 0.02em;
+    margin-bottom: 0em;
+    padding-bottom: 0.1em;
+    font-size: 38px;
+    color: #FFFFFF; }
+  .intro img {
+    max-height: 100%;
+    display: inline-block;
+    max-width: 100%;
+    margin-top: 1.8em;
+    margin-left: 1%; }
+    @media (min-width: 53em) {
+      .intro img {
+        margin-left: 5%; } }
+
+.title {
+  font-family: "brandon_grotesque", helvetica, arial, sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  text-transform: lowercase;
+  color: #FFFFFF;
+  font-size: 23px;
+  position: relative;
+  height: 2em; }
+  .title li {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center; }
+  .title li:first-child {
+    animation: text-first 10s ease infinite;
+    -webkit-animation: text-first 10s ease infinite; }
+  .title li:nth-child(2) {
+    animation: text-second 10s ease infinite;
+    -webkit-animation: text-second 10s ease infinite; }
+  .title li:nth-child(3) {
+    animation: text-third 10s ease infinite;
+    -webkit-animation: text-third 10s ease infinite; }
+  .title li:nth-child(4) {
+    animation: text-fourth 10s ease infinite;
+    -webkit-animation: text-fourth 10s ease infinite; }
+  .title li:nth-child(5) {
+    animation: text-fifth 10s ease infinite;
+    -webkit-animation: text-fifth 10s ease infinite; }
+
+@keyframes text-first {
+  0% {
+    opacity: 0; }
+
+  5% {
+    opacity: 1; }
+
+  20% {
+    opacity: 1; }
+
+  25% {
+    opacity: 0; }
+
+  40% {
+    opacity: 0; }
+
+  60% {
+    opacity: 0; }
+
+  80% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0; } }
+@keyframes text-second {
+  0% {
+    opacity: 0; }
+
+  20% {
+    opacity: 0; }
+
+  25% {
+    opacity: 1; }
+
+  40% {
+    opacity: 1; }
+
+  45% {
+    opacity: 0; }
+
+  60% {
+    opacity: 0; }
+
+  80% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0; } }
+@keyframes text-third {
+  0% {
+    opacity: 0; }
+
+  20% {
+    opacity: 0; }
+
+  40% {
+    opacity: 0; }
+
+  45% {
+    opacity: 1; }
+
+  60% {
+    opacity: 1; }
+
+  65% {
+    opacity: 0; }
+
+  80% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0; } }
+@keyframes text-fourth {
+  0% {
+    opacity: 0; }
+
+  20% {
+    opacity: 0; }
+
+  40% {
+    opacity: 0; }
+
+  60% {
+    opacity: 0; }
+
+  65% {
+    opacity: 1; }
+
+  80% {
+    opacity: 1; }
+
+  85% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0; } }
+@keyframes text-fifth {
+  0% {
+    opacity: 1; }
+
+  5% {
+    opacity: 0; }
+
+  20% {
+    opacity: 0; }
+
+  40% {
+    opacity: 0; }
+
+  60% {
+    opacity: 0; }
+
+  80% {
+    opacity: 0; }
+
+  85% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes text-first {
+  0% {
+    opacity: 0; }
+
+  5% {
+    opacity: 1; }
+
+  20% {
+    opacity: 1; }
+
+  25% {
+    opacity: 0; }
+
+  40% {
+    opacity: 0; }
+
+  60% {
+    opacity: 0; }
+
+  80% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0; } }
+@-webkit-keyframes text-second {
+  0% {
+    opacity: 0; }
+
+  20% {
+    opacity: 0; }
+
+  25% {
+    opacity: 1; }
+
+  40% {
+    opacity: 1; }
+
+  45% {
+    opacity: 0; }
+
+  60% {
+    opacity: 0; }
+
+  80% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0; } }
+@-webkit-keyframes text-third {
+  0% {
+    opacity: 0; }
+
+  20% {
+    opacity: 0; }
+
+  40% {
+    opacity: 0; }
+
+  45% {
+    opacity: 1; }
+
+  60% {
+    opacity: 1; }
+
+  65% {
+    opacity: 0; }
+
+  80% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0; } }
+@-webkit-keyframes text-fourth {
+  0% {
+    opacity: 0; }
+
+  20% {
+    opacity: 0; }
+
+  40% {
+    opacity: 0; }
+
+  60% {
+    opacity: 0; }
+
+  65% {
+    opacity: 1; }
+
+  80% {
+    opacity: 1; }
+
+  85% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0; } }
+@-webkit-keyframes text-fifth {
+  0% {
+    opacity: 1; }
+
+  5% {
+    opacity: 0; }
+
+  20% {
+    opacity: 0; }
+
+  40% {
+    opacity: 0; }
+
+  60% {
+    opacity: 0; }
+
+  80% {
+    opacity: 0; }
+
+  85% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+.portfolio {
+  padding: 2em 0 4em; }
+  .portfolio ul {
+    padding-top: 2.5em; }
+
+.portfolio-list a {
+  width: 100%;
+  display: block; }
+  .portfolio-list a:hover .portfolio-info {
+    opacity: 1;
+    -moz-transition: opacity 0.7s ease;
+    -o-transition: opacity 0.7s ease;
+    -webkit-transition: opacity 0.7s ease;
+    transition: opacity 0.7s ease; }
+  .portfolio-list a:hover p {
+    top: 40%;
+    -moz-transition: top 0.7s ease;
+    -o-transition: top 0.7s ease;
+    -webkit-transition: top 0.7s ease;
+    transition: top 0.7s ease; }
+.portfolio-list img {
+  width: 100%; }
+.portfolio-list li {
+  width: 100%;
+  float: left;
+  margin-right: 2.85714%;
+  display: inline;
+  display: block;
+  margin-bottom: 0.6em;
+  position: relative; }
+  @media (min-width: 53em) {
+    .portfolio-list li {
+      width: 48.93617%;
+      margin-right: 2.12766%; }
+      .portfolio-list li:nth-child(2n) {
+        float: right;
+        margin-right: 0; } }
+  @media (min-width: 71em) {
+    .portfolio-list li {
+      width: 32.39437%;
+      margin-right: 1.40845%; }
+      .portfolio-list li:nth-child(2n) {
+        float: left;
+        margin-right: 1.40845%; }
+      .portfolio-list li:nth-child(3n) {
+        float: right;
+        margin-right: 0; } }
+
+.portfolio-info {
+  font-family: "brandon_grotesque", Helvetica, Arial, sans-serif;
+  position: absolute;
+  opacity: 0;
+  background-color: rgba(242, 133, 183, 0.65);
+  color: #FFFFFF;
+  width: 100%;
+  height: 98%; }
+  .legacy .portfolio-info {
+    display: none; }
+  .portfolio-info p {
+    text-shadow: #c9578b 0px 0px 2em;
+    text-align: center;
+    font-size: 1.6em;
+    line-height: 1.2em;
+    top: 45%;
+    position: relative;
+    display: block; }
+  .portfolio-info span {
+    font-style: italic;
+    font-weight: normal;
+    display: block;
+    font-size: 0.7em;
+    -webkit-font-smoothing: subpixel-antialiased; }
+
+.portfolio-empty {
+  font-family: "brandon_grotesque", Helvetica, Arial, sans-serif; }
+  .portfolio-empty h3 {
+    color: #FFFFFF;
+    font-size: 4em; }
+
+.about {
+  padding: 1.8em 0 2em;
+  background-color: #f4eb9f; }
+
+.photo {
+  text-align: center;
+  margin: 0 auto;
+  height: 220px;
+  width: 220px;
+  padding: 2em 0 3em; }
+
+.about-left {
+  width: 100%;
+  float: left;
+  margin-right: 2.85714%;
+  display: inline;
+  display: block;
+  margin-bottom: 1em; }
+  .about-left span {
+    font-weight: bold; }
+  @media (min-width: 53em) {
+    .about-left {
+      width: 57.74648%;
+      margin-right: 1.40845%;
+      margin: 0 2.5em; } }
+  @media (min-width: 71em) {
+    .about-left {
+      width: 57.74648%;
+      margin-right: 1.40845%;
+      margin-left: 8.4507%;
+      margin-right: 8.4507%; }
+      .about-left:nth-child(2n) {
+        float: left;
+        margin-right: 1.40845%; } }
+
+.status {
+  border-top: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+  padding: 0.9em;
+  margin-bottom: 2em; }
+  .status p {
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 1em; }
+
+.about-right {
+  width: 100%;
+  float: left;
+  margin-right: 2.85714%;
+  display: inline;
+  display: block;
+  margin-bottom: 1em; }
+  .about-right ul {
+    padding-left: 0;
+    margin-bottom: 2.5em; }
+  .about-right li {
+    line-height: 2em;
+    font-weight: bold; }
+    .about-right li:first-child {
+      width: 3em;
+      border-bottom: 2px solid #333333;
+      padding-bottom: 0.5em;
+      margin-bottom: 0.5em;
+      line-height: 1.5em; }
+  @media (min-width: 53em) {
+    .about-right {
+      width: 23.94366%;
+      margin-right: 1.40845%;
+      font-size: 0.9em; } }
+  @media (min-width: 71em) {
+    .about-right {
+      width: 23.94366%;
+      margin-right: 1.40845%;
+      margin-left: 0%;
+      margin-right: 8.4507%;
+      font-size: 1em; }
+      .about-right:nth-child(2n) {
+        float: left;
+        margin-right: 1.40845%; } }
+
+.btn a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 0.5em 1.5em;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ae306e;
+  -moz-box-shadow: 0 4px #77034a;
+  -webkit-box-shadow: 0 4px #77034a;
+  box-shadow: 0 4px #77034a;
+  position: relative; }
+  .btn a:hover, .btn a:active {
+    background-color: #a72566;
+    -moz-box-shadow: 0 3px #670340;
+    -webkit-box-shadow: 0 3px #670340;
+    box-shadow: 0 3px #670340;
+    top: 2px; }
+
+.contact {
+  padding: 1.5em 0 2em;
+  background-color: #ad326f;
+  border-bottom: 12px solid #2e2e31;
+  text-align: center; }
+  .contact h2 {
+    margin-bottom: 1em; }
+  .contact h2, .contact h3 {
+    color: #FFFFFF; }
+  .contact li {
+    display: inline-block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-left: 1em; }
+    .contact li:first-child {
+      margin: 0; }
+
+.icons-social {
+  margin-top: 1em;
+  display: inline-block; }
+  .icons-social a {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    opacity: 0.7; }
+    .icons-social a:hover {
+      opacity: 1; }
+
+.footer {
+  background-color: #3b3b3c;
+  height: inherit; }
+  .footer .container {
+    padding: 0.9em 0 0; }
+  .footer p {
+    font-size: 0.8em;
+    color: #777777;
+    text-align: center; }
+
+.work {
+  padding-top: 8em;
+  margin-bottom: 3em;
+  text-align: center; }
+  .work h1 span {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.8em; }
+
+.work-more {
+  margin-top: 4em;
+  padding: 2em 0 1em;
+  border-top: 1px solid #666666; }
+
+@media (min-width: 53em) {
+  .work-grid {
+    width: 77.35849%;
+    float: left;
+    margin-right: 1.88679%;
+    padding-left: 11.32075%; } }
+@media (min-width: 71em) {
+  .work-grid {
+    width: 83.09859%;
+    float: left;
+    margin-right: 1.40845%;
+    padding-left: 8.4507%; } }
+
+.work-imgs li {
+  margin: 2em 0 2em;
+  display: block; }
+  @media (min-width: 53em) {
+    .work-imgs li {
+      margin: 3em 0 3em; } }
+.work-imgs img {
+  max-width: 100%; }
+
+/**
+ * For all naughty overrides that don't fit anywhere else, 
+ * eg: quick & dirty !importants and other shameful practise
+ *
+ * @author Kyreena Hay <kyreena@gmail.com>
+ * @url https://github.com/tbredin/OnionKnight
+ */
+.portfolio-empty {
+  display: none !important; }
+  @media (min-width: 53em) {
+    .portfolio-empty {
+      display: inline !important; } }
