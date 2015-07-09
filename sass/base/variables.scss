@@ -51,12 +51,10 @@ $round-to-nearest-half-line: true;
 
 // grid settings
 $col-num: 12;
-$column-width: 4.2em;   // default 4.2em is max col width for layouts to look nice on ipad
+$column-width: 5em;   // default 4.2em is max col width for layouts to look nice on ipad
 $gutter-width: 1em;     // default 1em is max gutter width for layouts to look nice on ipad
 $grid-padding: $gutter-width;
 
-// sticky footer (entirely optional - for use with compass sticky footer mixin)
-$sticky-footer: 300px;
 
 // typographic scale
 $h1-size: 30px;
