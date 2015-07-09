@@ -551,6 +551,9 @@ img {
   .logo h2 a, .logo h2 a:hover, .full h2 a, .full h2 a:hover {
     color: #5ec8d3; }
 
+.full {
+  margin-left: 1.5em; }
+
 h5 {
   padding: 0;
   margin: 0; }
@@ -601,7 +604,9 @@ a.email-b {
   text-align: center; }
   @media (min-width: 53em) {
     .intro {
-      padding: 7.5em 0 3em;
+      padding: 7.5em 0 3em; } }
+  @media (min-width: 71em) {
+    .intro {
       margin: 0.8em; } }
   .intro h1 {
     letter-spacing: 0.02em;
